@@ -8,7 +8,8 @@ scalaVersion := "2.11.2"
 
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor" % version.value,
-  "com.typesafe.akka" %% "akka-cluster" % version.value
+  "com.typesafe.akka" %% "akka-cluster" % version.value,
+  "com.github.scopt" %% "scopt" % "3.2.0"
 )
 
 site.settings
