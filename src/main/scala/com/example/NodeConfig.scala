@@ -31,8 +31,8 @@ case class NodeConfig(isSeed: Boolean = false, seedNodes: Seq[String] = Seq.empt
     // which config should be used
     val configPath = if (isSeed) SEED_NODE else CLUSTER_NODE
 
-    // set host ip if available
-    val ip = HostIP.load getOrElse "127.0.0.1"
+    // use configured ip or get host ip if available
+    val ip = if (config hasPath "clustering.ip") config getString "clustering.ip" else HostIP.load getOrElse "127.0.0.1"
     val ipValue = ConfigValueFactory fromAnyRef ip
 
     // add seed nodes to config
