@@ -1,5 +1,3 @@
-> !!! Work in progress. Blog entry not published yet !!!
-
 # Akka & Docker
 
 For a detailed description read [this blog entry](http://mukis.de/pages/akka-cluster-with-docker-containers/).
