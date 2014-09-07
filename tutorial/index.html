@@ -33,6 +33,15 @@ docker run --name node-2 akka-docker:2.3.4 <ip-of-your-seed-1>:2551 <ip-of-your-
 </div>
 
 <div>
+    <h2>Seed IPs - Where from?</h2>
+    <p>
+       For this activator you have to set the ip adresses manually. However you can use provision
+       tools/frameworks like zookeeper, chef or puppet (or simple dns hosts) to fire up your cluster
+       automatically. This is another problem not solved/described by this activator.
+    </p>
+</div>
+
+<div>
     <h2>Thanks</h2>
     Special thanks to <a href="http://blog.michaelhamrah.com/2014/03/running-an-akka-cluster-with-docker-containers/">Michael Hamrah</a>
     who wrote a first blog article on this topic and inspired this project.
